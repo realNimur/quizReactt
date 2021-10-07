@@ -1,0 +1,17 @@
+.quiz {
+  &__answer {
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border:1px solid #fff;
+    border-radius: 10px;
+    transition: .2s;
+    cursor: pointer;
+    &:hover{
+      color:#5041b2;
+      background-color: #fff;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
