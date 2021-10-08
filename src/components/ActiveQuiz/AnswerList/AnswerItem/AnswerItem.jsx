@@ -1,9 +1,11 @@
 import React from 'react';
 import './AnswerItem.scss'
 
-const AnswerItem = ({answer,onClickAnswerHandler}) => {
+const AnswerItem = ({answer,onClickAnswerHandler,state}) => {
+    let cls = state ? state : '';
     return (
-        <li className="quiz__answer" onClick={()=>onClickAnswerHandler(answer.id)}>{answer.text}</li>
+
+        <li className={`quiz__answer ${cls}`} onClick={()=>onClickAnswerHandler(answer.id)}>{answer.text}</li>
     );
 };
 

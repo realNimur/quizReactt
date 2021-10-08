@@ -2,7 +2,7 @@ import React from 'react';
 import './ActiveQuiz.scss'
 import AnswerList from "./AnswerList/AnswerList";
 
-const ActiveQuiz = ({answers,question,onClickAnswerHandler,quizLength,currentQuestion}) => {
+const ActiveQuiz = ({answers,question,onClickAnswerHandler,quizLength,currentQuestion,state}) => {
 
     return (
         <div className={"quiz-question"}>
@@ -11,6 +11,7 @@ const ActiveQuiz = ({answers,question,onClickAnswerHandler,quizLength,currentQue
                 <p>{currentQuestion} / {quizLength}</p>
             </div>
             <AnswerList
+                state={state}
                 answers={answers}
                 onClickAnswerHandler={
                     onClickAnswerHandler

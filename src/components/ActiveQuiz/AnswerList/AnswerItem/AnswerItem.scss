@@ -10,6 +10,16 @@
       color:#5041b2;
       background-color: #fff;
     }
+    &.success{
+      background-color: #73db2c;
+      border-color:#73db2c;
+      color: #000;
+    }
+    &.error{
+      background-color: #f55f5f;
+      border-color:#f55f5f;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
